@@ -1,0 +1,13 @@
+
+Scenario: Verify comparing products through Computers/Desktops section                                              [90m# src/test/java/features/ComparingProductsWithMouseHoover.feature:6[0m
+  [32mGiven [0m[32mI navigate to url [0m[32m[1m"https://demo.nopcommerce.com/"[0m                                                           [90m# StepDefinition.i_navigate_to_url(java.lang.String)[0m
+  [32mWhen [0m[32mI MouseHoover on Computers Tab on the HomePage[0m                                                               [90m# StepDefinition.i_mouse_hoover_on_computers_tab_on_the_home_page()[0m
+  [32mThen [0m[32mI should be able to see and click Desktop link[0m                                                               [90m# StepDefinition.i_should_be_able_to_see_and_click_desktop_link()[0m
+  [32mThen [0m[32mI should navigate to Desktops Page ExpectedPageTitle [0m[32m[1m"nopCommerce demo store. Desktops"[0m                      [90m# StepDefinition.i_should_navigate_to_desktops_page_expected_page_title(java.lang.String)[0m
+  [32mWhen [0m[32mI click on Add to Compare List button of 1st Product which is Build your own Computer[0m                        [90m# StepDefinition.i_click_on_add_to_compare_list_button_of_1st_product_which_is_build_your_own_computer()[0m
+  [32mThen [0m[32mI should be able to see a text saying your product has been added[0m                                            [90m# StepDefinition.i_should_be_able_to_see_a_text_saying_expected_text()[0m
+  [32mWhen [0m[32mI click on Add to Compare List of 2nd Product which is Digital Storm VANQUISH3 Custom Performance PC[0m         [90m# StepDefinition.i_click_on_add_to_compare_list_of_2nd_product_which_is_digital_storm_vanquish_custom_performance_pc()[0m
+  [32mThen [0m[32mI should be able to see a text saying product has been added[0m                                                 [90m# StepDefinition.i_should_be_able_to_see_a_text_saying_expected_text1_product_has_been_added()[0m
+  [32mWhen [0m[32mI click on Compare products list[0m                                                                             [90m# StepDefinition.i_click_on_compare_products_list()[0m
+  [32mThen [0m[32mI should be navigated to Compare products page ExpectedPageTitle1 [0m[32m[1m"nopCommerce demo store. Compare Products"[0m [90m# StepDefinition.i_should_be_navigated_to_compare_products_page_expected_page_title1(java.lang.String)[0m
+  [32mAnd [0m[32mI should be able to see both the products added to compare product list[0m                                       [90m# StepDefinition.i_should_be_able_to_see_both_the_products_added_to_compare_product_list()[0m
