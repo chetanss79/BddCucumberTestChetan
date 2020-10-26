@@ -22,17 +22,19 @@ public class BaseTest
     public static DesktopsPage desktopspage;
     public static CompareProductsPage comparepropage;
 
-    //public static final String AUTOMATE_USERNAME = "chetan272";
-    //public static final String AUTOMATE_ACCESS_KEY = "bh4xFUZKw7vLzrcp1VYx";
-    //public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
+    public static final String AUTOMATE_USERNAME = "chetan272";
+    public static final String AUTOMATE_ACCESS_KEY = "bh4xFUZKw7vLzrcp1VYx";
+    public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
     @BeforeAll
     public void setUp() throws MalformedURLException
     {
-        WebDriverManager.chromedriver().setup();
+       /* WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
-        /*
+        */
+
+
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("os", "Windows");
         caps.setCapability("os_version", "10");
@@ -41,8 +43,6 @@ public class BaseTest
         caps.setCapability("browserstack.local", "false");
         caps.setCapability("browserstack.selenium_version", "3.14.0");
         WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
-
-         */
 
         homepage = new HomePage(driver);
         loginpage = new LoginPage(driver);
